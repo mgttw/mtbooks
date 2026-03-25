@@ -37,7 +37,7 @@ h1{
 }
 
 .abas,
-.cbç__direita a{
+.cbc__direita a{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-decoration: none;
@@ -46,7 +46,7 @@ h1{
 }
 
 
-.cabeçalho {
+.cabecalho {
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -55,28 +55,28 @@ h1{
     padding: 10px 0px;
 }
 
-.cabeçalho img {
+.cabecalho img {
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
 
 
-.cbç__esquerda {
+.cbc__esquerda {
     display: flex;
     align-items: center;
     width: 100%;
     margin-left: 45px;
 }
 
-.cbç__direita {
+.cbc__direita {
     display: flex;
     align-items: center;
     gap: 35px;
     margin-right: 50px;
 }
 
-.cbç__direita a {
+.cbc__direita a {
     display: flex;
     align-items: center; 
     gap: 8px;
@@ -85,7 +85,7 @@ h1{
     transition: 0.2s;
 }
 
-.cbç__direita a:hover{
+.cbc__direita a:hover{
     opacity: 0.6;
 }
 
@@ -93,7 +93,7 @@ h1{
     opacity: 0.6;
 }
 
-.cbç__direita img {
+.cbc__direita img {
     width: 30px;
     height: 30px;
 }
@@ -147,28 +147,7 @@ h1{
 }
 
 
-.pesquisa input {
-    width: 330px;
-    max-width: 600px;
-    padding: 12px 40px;
-    border: 2px solid;
-    border-radius: 25px;
-    border: 2px solid var(--cor-branco);
-    background: none;
-    color: var(--cor-branco);
-    text-align: center;
-}
-
-.pesquisa input::placeholder {
-    color: #ffffffb3;
-}
-
-.pesquisa input:focus {
-    outline: none;
-    border: 2px solid var(--cor-branco)
-}
-
-.tt__lançamentos{
+.tt__lancamentos{
     background-color: var(--cor-branco);
     color: var(--cor-laranja);
     font-family: "Poppins", sans-serif;
@@ -188,64 +167,68 @@ h1{
 
 }
 
+.img__direita{
+    padding-left: 100px;
+
+}
+
 .exemp__op {
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-    margin: 100px 120px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 120px;
     gap: 20px;
-    position: relative; 
-    height: 100%; 
+    position: relative;
 }
 
 .carrossel {
-  position: relative;
-  width: fit-content;
-  margin-left: 100px; 
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px; 
 }
 
-.seta {
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
+.lado__esquerdo {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
+}
 
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.seta__esquerda,
+.seta__direita {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 70px;
+    border-radius: 100px;
+    border: none;
+    background-color: #0c3b5c;
+    color: white;
+    cursor: pointer;
 }
 
 .seta__esquerda {
-  height: 30px;
-  width: 70px;
-  font-weight: 700;
-  left: -20px;
-  border-radius: 100px;
-  border: none;
-  background-color: #0c3b5c;
-  color: white;
-
+    left: -67px;
 }
 
 .seta__direita {
-  height: 30px;
-  width: 70px;
-  font-weight: 700;
-  right: -20px;
-  border-radius: 100px;
-  border: none;
-  background-color: #0c3b5c;
-  color: white;
-
+    right: -65px;
 }
-
 .bolinhas {
-  position: absolute;
-  top: 57%;
-  left: 35%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
+    position: absolute;
+    top: -20px;   
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
 }
 
 .bolinhas span {
@@ -256,26 +239,6 @@ h1{
 }
 
 .bolinhas .ativa {
-  background: #0c3b5c;
-}
-
-.bolinhas2 {
-  position: absolute;
-  top: -10%;
-  left: 32%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-}
-
-.bolinhas2 span {
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50%;
-}
-
-.bolinhas2 .ativa2 {
   background: #0c3b5c;
 }
 
@@ -351,7 +314,7 @@ h1{
 
 .foot__esquerda{
     gap: 2px;
-    color: #0c3b5c;;
+    color: #0c3b5c;
 }
 
 .foot__esquerda h2{
@@ -363,63 +326,59 @@ h1{
     font-size: 20px;
 }
 
-.foot__direita input {
-    width: 300px;               
-    padding: 12px 20px;         
-    border: 2px solid #0c3b5c;  
-    border-radius: 25px;         
-    background: none;            
-    color: var(--cor-branco);    
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-size: 20px;
 
-}
-
-.foot__direita input::placeholder {
-    color: #0c3b5c;              
-}
-
-.foot__direita input:focus {
-    outline: none;
-    box-shadow: 0 0 5px var(--cor-laranja); 
-    border-color: var(--cor-laranja);
-}
-
-
-.pesquisa input,
-.foot__direita input {
-    width: 330px;               
+.pesquisa input {
+    width: 330px;
     max-width: 600px;
-    padding: 12px 40px;          
-    border-radius: 25px;         
-    background: none;            
-    color: var(--cor-branco);    
+    padding: 12px 40px;
+    border: 2px solid var(--cor-branco);
+    border-radius: 25px;
+    background: none;
+    color: var(--cor-branco);
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 18px;
     transition: border-color 0.5s;
 }
 
+.pesquisa input:focus {
+   outline: none;
+    box-shadow: 0 0 5px var(--cor-branco); 
+    border-color: var(--cor-branco);
+    animation: brilhobranco 2s infinite;
+}
+
+
 .pesquisa input::placeholder {
     color: #ffffffb3; 
 }
+
+.foot__direita input {
+    width: 300px;
+    padding: 12px 20px;
+    border: 2px solid #0c3b5c;
+    border-radius: 25px;
+    background: none;
+    color: #0c3b5c;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    transition: border-color 0.5s;
+}
+
+.foot__direita input:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--cor-laranja); 
+    border-color: var(--cor-laranja);
+    animation: brilhoLaranja 2s infinite;
+}
+
 
 .foot__direita input::placeholder {
     color: #0c3b5c; 
 }
 
-.pesquisa input:focus {
-    outline: none;
-    border-color: #ffffff;
-    animation: brilhoBranco 2   s infinite;
-}
 
-.foot__direita input:focus {
-    outline: none;
-    border-color: #EB9B00;
-    animation: brilhoLaranja 2s infinite;
-}
 
 @keyframes brilhoBranco {
     0%, 100% { box-shadow: 0 0 8px 2px #ffffff; }
@@ -430,4 +389,5 @@ h1{
     0%, 100% { box-shadow: 0 0 8px 2px #EB9B00; }
     50% { box-shadow: 0 0 8px 2px rgba(235,155,0,0.2); }
 }
+
 
