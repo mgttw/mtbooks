@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabeçalho">
+    <header class="cabecalho">
 
-    <!-- <span class="cabeçalho__menu">
-             <img src="/img mtbooks/Menu Aberto.png" alt="">
-        </span> -->
-<div class="cbç__esquerda">
+<div class="cbc__esquerda">
 
     <div class="logo-area">
-        <img src="/img mtbooks/Logo.png" alt="logo MtBooks">   
+        <img src="/img-mtbooks/Logo.png" alt="logo MtBooks">   
         <h1><strong class="strong">Mt</strong>Books</h1>
     </div>
 
@@ -28,12 +25,11 @@
 
     </div>  
     
-    <div class="cbç__direita">
+    <div class="cbc__direita">
             
-            <a href="#"><img src="/img mtbooks/simb compra.png" alt="comprados">Minha sacola</a>
-            <a href="#"><img src="/img mtbooks/simb icoine.png" alt="icone do perfil">Meu perfil</a>
+            <a href="#"><img src="/img-mtbooks/simb compra.png" alt="comprados">Minha sacola</a>
+            <a href="#"><img src="/img-mtbooks/simb icoine.png" alt="icone do perfil">Meu perfil</a>
 
-            <!--<a href="#"><img src="/img mtbooks/simb coração.png" alt="favoritos"></a>-->
 
     </div>        
     </header>
@@ -51,29 +47,36 @@
 
     </section>
 
-    <section class="lançamentos">
-      <div class="tt__lançamentos">
+    <section class="lancamentos">
+      <div class="tt__lancamentos">
         <h2>ÚLTIMOS LANÇAMENTOS</h2>
       </div>   
 
     <div class="carrossel">
 
-            <div class="exemp__op">
+        <div class="exemp__op">
 
-                <button class="seta__esquerda">⬅</button>
-                    <img src="/img mtbooks/Carrossel.png" alt="carrossel exemplo">
-                <button class="seta__direita">⮕</button>        
+            <div class="lado__esquerdo">
 
-                    <img class="img__direita" src="img mtbooks/Card interesse Angular.png" alt="card exemplo">
+            <div class="img-wrapper">
+
+                <img src="/img-mtbooks/Carrossel.png" alt="carrossel exemplo">       
+                
+                    <div class="bolinhas">
+                        <span class="ativa"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
             </div>
 
-        </div>
-            <div class="bolinhas">
-                <span class="ativa"></span>
-                <span></span>
-                <span></span>
-            </div>
+                    <button class="seta__esquerda">⬅</button>
+                    <button class="seta__direita">⮕</button>   
 
+                </div>
+            
+                    <img class="img__direita" src="img-mtbooks/Card interesse Angular.png" alt="card exemplo">
+                </div>
+        </div>    
     </section>
 
 <section class="vendidos">
@@ -81,20 +84,30 @@
         <h2>MAIS VENDIDOS</h2>
     </div>    
 
-    <div class="carrossel">
-        <div class="exemp__op">
-            <button class="seta__esquerda">⬅</button>
-            <img src="/img mtbooks/Carrossel.png" alt="carrossel exemplo">
-            <button class="seta__direita">⮕</button>        
-            <img class="img__direita" src="img mtbooks/Card autora do mês.png" alt="card exemplo">
+   <div class="carrossel">
+    <div class="exemp__op">
+
+        <div class="lado__esquerdo">
+
+            <div class="img-wrapper">
+                <img src="/img-mtbooks/Carrossel.png">
+
+                <div class="bolinhas">
+                    <span class="ativa"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <button class="seta__esquerda">⬅</button>
+                <button class="seta__direita">⮕</button>
+            </div>
+
         </div>
 
-        <div class="bolinhas2">
-            <span class="ativa2"></span>
-            <span></span>
-            <span></span>
-        </div>
+        <img class="img__direita" src="img-mtbooks/Card autora do mês.png">
+
     </div>
+   </div>
 </section>
 
 <section class="recentes">
@@ -125,10 +138,6 @@
     </div>
 </section>
 
-</body>
-
-
-
 <footer>
     <section class="footer1">
     <div class="foot__esquerda">
@@ -138,9 +147,10 @@
 
     <div class="foot__direita">
         <input type="email" placeholder="✉︎ Digite seu email aqui!" id="email">
-
     </div>
     </section>
 
 </footer>
+
+</body>
 </html>
